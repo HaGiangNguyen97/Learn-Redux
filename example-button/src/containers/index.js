@@ -10,12 +10,11 @@ function mapStateToProps(state) {
 }
 
 const App = ({ state }) => {
-	console.log({ state });
 	return (
 		<div>
 			<div className=" ">
 				{numbers.map(id => (
-					<button className="w3 h3" key={id}>
+					<button className={'w3 h3 ' + (state[id] ? state.id : 'bg-light-blue')} key={id}>
 						{state[id] ? 'YES' : 'NO'}
 					</button>
 				))}

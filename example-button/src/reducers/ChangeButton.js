@@ -1,8 +1,8 @@
 const defaultState = {
-	1: false,
-	2: false,
-	3: false,
-	4: false
+	1: { bool: false, color: 'bg-white' },
+	2: { bool: false, color: 'bg-white' },
+	3: { bool: false, color: 'bg-white' },
+	4: { bool: false, color: 'bg-white' }
 };
 const ChangeButton = (state = defaultState, action) => {
 	if (action.type === 'CHANGE_TEXT') {
